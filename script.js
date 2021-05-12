@@ -136,10 +136,7 @@ function showAllTasks() {
             //https://developer.mozilla.org/fr/docs/Apprendre/HTML/Comment/Utiliser_attributs_donnes
             content +='<td><a href="#" class="delete btn btn-xs" data-id="' + i + '">❌</a></td>';
             content +='</tr>';            
-        });
-            
-            
-            
+        }); 
        
         //fin de boucle
     content +='</tbody>';
@@ -214,14 +211,9 @@ document.addEventListener('DOMContentLoaded', function() {
               */
               //mode ajout sur false
               isAdd = false;
-             editTask(parseInt(e.target.dataset.id), formDom, fieldsDom); 
-             
-
+             editTask(parseInt(e.target.dataset.id), formDom, fieldsDom);
           }
         });
-    
-    
-    
     //mettre en place un écouteur d'event sur le click 
     btnPlus.addEventListener('click', function() {
         //mode ajout
@@ -275,10 +267,6 @@ document.addEventListener('DOMContentLoaded', function() {
             remarque : idTask contiendra le rang du tableau todolist de la tâche à mettre jour
             */
             }
-            
-            
-            
-            
             //sauvegarde todolist dans localStorage
             saveTasks();
             
@@ -295,12 +283,6 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('on a au moins 1 erreur');
         }
     });
-    
-    
-
-
-    
-
 });
 
 
