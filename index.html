@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <!-- CSS only -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+            integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <title>todolist</title>
+    </head>
+    <body>
+        <header class="mb-5-percent">
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Todolist</a>
+                </div>
+            </nav>
+        </header>
+        <section class="container mt-10">
+            <div class="form">
+                 <!-- contact form -->
+                <div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button
+                                type="button"
+                                id="btnPlus"
+                                class="btn btn-xs btn-primary mb-10"
+                            >
+                                Ajouter
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row form-container">
+                        <form id="formTask" class="hide">
+                            <legend>Ajouter une tâche</legend>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="title">Titre</label>
+                                    <input
+                                        type="text"
+                                        class="form-control form-control-lg"
+                                        id="title"
+                                        name="title"
+                                    />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="priority">Priorité</label>
+                                    <select id="priority" name="priority" class="form-control form-control-lg">
+                                    <option value="1">Haute</option>
+                                    <option value="2">Normale</option>
+                                    <option value="3">Basse</option>
+                                </select>
+                                </div>
+                            </div>
+
+
+                            <div class="form-control-lg mt-10">
+                                <button type="submit" class="btn btn-success">
+                                    Enregister
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- contact form -->
+            </div>
+            <div class="row" id="listTasks">
+            </div>
+        </section>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
